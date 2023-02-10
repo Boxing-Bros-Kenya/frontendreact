@@ -11,9 +11,9 @@ const Home = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState();
-  const [message, setMessage] = useState(
-    "A new member has been created, congrats!"
-  );
+  // const [message, setMessage] = useState(
+  //   "A new member has been created, congrats!"
+  // );
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -21,7 +21,7 @@ const Home = () => {
       name: name,
       email: email,
       phonenumber: phone,
-      message: message,
+      // message: message,
     };
     axios
       .post("https://boxingbrosapi.herokuapp.com/api/emails", { data })
@@ -34,87 +34,87 @@ const Home = () => {
   return (
     <>
       <MetaTags>
-        <meta charSet='UTF-8' />
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
-        <meta property='og:type' content='website' />
-        <meta property='og:title' content='Boxing bros' />
-        <meta property='og:site_name' content='Boxing Bros Kenya' />
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Boxing bros" />
+        <meta property="og:site_name" content="Boxing Bros Kenya" />
         <meta
-          name='description'
-          content='Boxing bros Kenya, Boxing in kenya,Boxing,Boxing in Nairobi,Boxercise,Weight Loss,Fitness Nairobi
+          name="description"
+          content="Boxing bros Kenya, Boxing in kenya,Boxing,Boxing in Nairobi,Boxercise,Weight Loss,Fitness Nairobi
     Kick Boxing, Kick Boxing in Kenya, Kick Boxing in Nairobi, Muay Thai, Muay Thai in Kenya, Muay Thai in Nairobi,
     Boxing Gym,Muay Thai Gym, Personal training in Nairobi, Strength and Conditioning self defense, Personal trainer,
-    Fitness center, Best Boxing Gym Nairobi,Best Muay Thai Nairobi'
+    Fitness center, Best Boxing Gym Nairobi,Best Muay Thai Nairobi"
         />
         <meta
-          name='google-site-verification'
-          content='MfG6oY-Y5pv0LHiy4IMi3ONLYN2T8FkQDdlU8FlouY4'
+          name="google-site-verification"
+          content="MfG6oY-Y5pv0LHiy4IMi3ONLYN2T8FkQDdlU8FlouY4"
         />
         <meta
-          property='og:description'
-          content='This is the Landing page for Boxing bros. Follow us on instagram via the page.
-    You can also contant us if you need training on Boxing or basic fitness'
+          property="og:description"
+          content="This is the Landing page for Boxing bros. Follow us on instagram via the page.
+    You can also contant us if you need training on Boxing or basic fitness"
         />
       </MetaTags>
 
       <title>BoxingBros</title>
-      <div className='navigation'>
+      <div className="navigation">
         <input
-          type='checkbox'
-          className='navigation__checkbox'
-          id='navi-toggle'
+          type="checkbox"
+          className="navigation__checkbox"
+          id="navi-toggle"
         />
-        <label htmlFor='navi-toggle' className='navigation__button open-menu'>
-          <span className='navigation__icon'>&nbsp;</span>
+        <label htmlFor="navi-toggle" className="navigation__button open-menu">
+          <span className="navigation__icon">&nbsp;</span>
         </label>
-        <div className='navigation__background'>&nbsp;</div>
-        <nav className='navigation__nav'>
-          <ul className='navigation__list'>
-            <li className='navigation__item'>
-              <a className='navigation__link-close close-menu'>
-                <span className='navigation__icon-close'>X</span>
+        <div className="navigation__background">&nbsp;</div>
+        <nav className="navigation__nav">
+          <ul className="navigation__list">
+            <li className="navigation__item">
+              <a className="navigation__link-close close-menu">
+                <span className="navigation__icon-close">X</span>
               </a>
             </li>
-            <li className='navigation__item'>
-              <a href='#' className='navigation__link close-menu'>
+            <li className="navigation__item">
+              <a href="#" className="navigation__link close-menu">
                 <span>01.</span>About
               </a>
             </li>
-            <li className='navigation__item'>
+            <li className="navigation__item">
               <a
-                href='#section-features'
-                className='navigation__link close-menu'
+                href="#section-features"
+                className="navigation__link close-menu"
               >
                 <span>02.</span>Benefits
               </a>
             </li>
-            <li className='navigation__item'>
+            <li className="navigation__item">
               <a
-                href='#section-packages'
-                className='navigation__link close-menu'
+                href="#section-packages"
+                className="navigation__link close-menu"
               >
                 <span>03.</span>Packages
               </a>
             </li>
-            <li className='navigation__item'>
+            <li className="navigation__item">
               <a
-                href='#section-stories'
-                className='navigation__link close-menu'
+                href="#section-stories"
+                className="navigation__link close-menu"
               >
                 <span>04.</span>Client Stories
               </a>
             </li>
-            <li className='navigation__item'>
-              <a href='#section-book' className='navigation__link close-menu'>
+            <li className="navigation__item">
+              <a href="#section-book" className="navigation__link close-menu">
                 <span>05.</span>Contact Us
               </a>
             </li>
-            <li className='navigation__item'>
+            <li className="navigation__item">
               <a
-                href='https://instagram.com/boxingbros_ke?utm_source=ig_profile_share&igshid=1tfvvk7bzbx9z'
-                target='_blank'
-                className='navigation__link close-menu'
+                href="https://instagram.com/boxingbros_ke?utm_source=ig_profile_share&igshid=1tfvvk7bzbx9z"
+                target="_blank"
+                className="navigation__link close-menu"
               >
                 <span>06.</span>Gallery
               </a>
@@ -122,124 +122,124 @@ const Home = () => {
           </ul>
         </nav>
       </div>
-      <header className='header'>
-        <div className='logo-box'>
+      <header className="header">
+        <div className="logo-box">
           {/*<img class="logo" src="images/logo.png" alt="BoxingBros">*/}
         </div>
-        <div className='text-box'>
-          <h1 className='heading-primary'>
-            <span className='heading-primary-main'>Boxing Bros</span>
-            <span className='heading-primary-sub'>
+        <div className="text-box">
+          <h1 className="heading-primary">
+            <span className="heading-primary-main">Boxing Bros</span>
+            <span className="heading-primary-sub">
               where personal fitness begins
             </span>
           </h1>
-          <a href='#section-book' className='btn btn-white btn-animated'>
+          <a href="#section-book" className="btn btn-white btn-animated">
             BOOK NOW
           </a>
         </div>
       </header>
       <main>
-        <section className='section-about' id='section-about'>
-          <div className='u-center-text u-margin-bottom-big'>
-            <h2 className='heading-secondary'>WHO ARE THE BROS</h2>
+        <section className="section-about" id="section-about">
+          <div className="u-center-text u-margin-bottom-big">
+            <h2 className="heading-secondary">WHO ARE THE BROS</h2>
           </div>
-          <div className='row'>
-            <div className='col-1-of-2'>
-              <h3 className='heading-tertiary u-margin-bottom-small'>
+          <div className="row">
+            <div className="col-1-of-2">
+              <h3 className="heading-tertiary u-margin-bottom-small">
                 ABOUT BRAYAN
               </h3>
-              <p className='paragraph'>
+              <p className="paragraph">
                 Brayan Omondi is the epitome of fitness trainers with a
                 background in basketball ,football, rugby and swimming. He began
                 boxing in his late teens at the age of 19 and quickly rose to
                 the ranks of the top heavyweight boxers in the country......
               </p>
               <a
-                href='#popup-brayan'
-                className='btn-text u-margin-bottom-medium'
+                href="#popup-brayan"
+                className="btn-text u-margin-bottom-medium"
               >
                 Learn More →
               </a>
-              <h3 className='heading-tertiary u-margin-bottom-small'>
+              <h3 className="heading-tertiary u-margin-bottom-small">
                 ABOUT LENNOX
               </h3>
-              <p className='paragraph'>
+              <p className="paragraph">
                 lennox omukwaya aka lennox hostile is a one of the stylish
                 boxers known in the country, grew up in a boxing family with his
                 father pugilist top copkusimba leading the national boxing team
                 as its captain he comes from a family of boxers from his father,
                 grandfather brother and....
               </p>
-              <a href='#popup-lennox' className='btn-text'>
+              <a href="#popup-lennox" className="btn-text">
                 Learn More →
               </a>
             </div>
-            <div className='col-1-of-2'>
-              <div className='composition'>
+            <div className="col-1-of-2">
+              <div className="composition">
                 <img
                   src={bro1}
-                  alt='Photo1'
-                  className='composition__photo composition__photo--p1'
+                  alt="Photo1"
+                  className="composition__photo composition__photo--p1"
                 />
                 <img
                   src={bro2}
-                  alt='Photo2'
-                  className='composition__photo composition__photo--p2'
+                  alt="Photo2"
+                  className="composition__photo composition__photo--p2"
                 />
               </div>
             </div>
           </div>
         </section>
-        <section className='section-features' id='section-features'>
-          <div className='u-center-text u-margin-bottom-big u-margin-top-small'>
-            <h2 className='heading-secondary__features'>
+        <section className="section-features" id="section-features">
+          <div className="u-center-text u-margin-bottom-big u-margin-top-small">
+            <h2 className="heading-secondary__features">
               SOME OF THE FEATURES
             </h2>
           </div>
-          <div className='row'>
-            <div className='col-1-of-4'>
-              <div className='feature-box'>
-                <i className='icon-basic-clockwise feature-box__icon' />
-                <h3 className='heading-tertiary u-margin-bottom-medium'>
+          <div className="row">
+            <div className="col-1-of-4">
+              <div className="feature-box">
+                <i className="icon-basic-clockwise feature-box__icon" />
+                <h3 className="heading-tertiary u-margin-bottom-medium">
                   TIME
                 </h3>
-                <p className='feature-box__text'>
+                <p className="feature-box__text">
                   We provide our services during convenient times that fit well
                   with your schedule.
                 </p>
               </div>
             </div>
-            <div className='col-1-of-4'>
-              <div className='feature-box'>
-                <i className='icon-basic-map feature-box__icon' />
-                <h3 className='heading-tertiary u-margin-bottom-medium'>
+            <div className="col-1-of-4">
+              <div className="feature-box">
+                <i className="icon-basic-map feature-box__icon" />
+                <h3 className="heading-tertiary u-margin-bottom-medium">
                   CONVENIENCE
                 </h3>
-                <p className='feature-box__text'>
+                <p className="feature-box__text">
                   Our quality of training will ensure that your fitness needs
                   are well met.
                 </p>
               </div>
             </div>
-            <div className='col-1-of-4'>
-              <div className='feature-box'>
-                <i className='icon-basic-calendar feature-box__icon' />
-                <h3 className='heading-tertiary u-margin-bottom-medium'>
+            <div className="col-1-of-4">
+              <div className="feature-box">
+                <i className="icon-basic-calendar feature-box__icon" />
+                <h3 className="heading-tertiary u-margin-bottom-medium">
                   SCHEDULE
                 </h3>
-                <p className='feature-box__text'>
+                <p className="feature-box__text">
                   We lias with your schedule ensuring that your personal
                   activities aren't altered.
                 </p>
               </div>
             </div>
-            <div className='col-1-of-4'>
-              <div className='feature-box'>
-                <i className='icon-basic-geolocalize-01 feature-box__icon' />
-                <h3 className='heading-tertiary u-margin-bottom-medium'>
+            <div className="col-1-of-4">
+              <div className="feature-box">
+                <i className="icon-basic-geolocalize-01 feature-box__icon" />
+                <h3 className="heading-tertiary u-margin-bottom-medium">
                   LOCATION
                 </h3>
-                <p className='feature-box__text'>
+                <p className="feature-box__text">
                   We provide both home training and gym training for your
                   convenience.
                 </p>
@@ -247,21 +247,21 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className='section-packages' id='section-packages'>
-          <div className='u-center-text u-margin-bottom-huge'>
-            <h2 className='heading-secondary'>SOME OF THE PACKAGES</h2>
+        <section className="section-packages" id="section-packages">
+          <div className="u-center-text u-margin-bottom-huge">
+            <h2 className="heading-secondary">SOME OF THE PACKAGES</h2>
           </div>
-          <div className='row'>
-            <div className='col-1-of-3'>
-              <div className='card'>
-                <div className='card_side card_side-front'>
-                  <div className='card_picture card_picture-1'>&nbsp;</div>
-                  <h4 className='card_heading'>
-                    <span className='card_heading-span card_heading-span-1'>
+          <div className="row">
+            <div className="col-1-of-3">
+              <div className="card">
+                <div className="card_side card_side-front">
+                  <div className="card_picture card_picture-1">&nbsp;</div>
+                  <h4 className="card_heading">
+                    <span className="card_heading-span card_heading-span-1">
                       PERSONAL TRAINING
                     </span>
                   </h4>
-                  <div className='card_details'>
+                  <div className="card_details">
                     <ul>
                       <li>Sun - Sat</li>
                       <li>1 Session - 2000</li>
@@ -271,30 +271,30 @@ const Home = () => {
                     </ul>
                   </div>
                 </div>
-                <div className='card_side card_side-back card_side-back-1'>
-                  <div className='card_cta'>
-                    <div className='card_price-box'>
-                      <p className='card_price-only'>Walk-In Session</p>
-                      <p className='card_price-only'>Ksh</p>
-                      <p className='card_price-value'>2000</p>
+                <div className="card_side card_side-back card_side-back-1">
+                  <div className="card_cta">
+                    <div className="card_price-box">
+                      <p className="card_price-only">Walk-In Session</p>
+                      <p className="card_price-only">Ksh</p>
+                      <p className="card_price-value">2000</p>
                     </div>
-                    <a href='#section-book' className='btn btn-white'>
+                    <a href="#section-book" className="btn btn-white">
                       Book Now
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-1-of-3'>
-              <div className='card'>
-                <div className='card_side card_side-front'>
-                  <div className='card_picture card_picture-2'>&nbsp;</div>
-                  <h4 className='card_heading'>
-                    <span className='card_heading-span card_heading-span-2'>
+            <div className="col-1-of-3">
+              <div className="card">
+                <div className="card_side card_side-front">
+                  <div className="card_picture card_picture-2">&nbsp;</div>
+                  <h4 className="card_heading">
+                    <span className="card_heading-span card_heading-span-2">
                       BOXING
                     </span>
                   </h4>
-                  <div className='card_details'>
+                  <div className="card_details">
                     <ul>
                       <li>Sun - Sat</li>
                       <li>1 Session - 2500</li>
@@ -304,30 +304,30 @@ const Home = () => {
                     </ul>
                   </div>
                 </div>
-                <div className='card_side card_side-back card_side-back-2'>
-                  <div className='card_cta'>
-                    <div className='card_price-box'>
-                      <p className='card_price-only'>Walk-In Session</p>
-                      <p className='card_price-only'>Ksh</p>
-                      <p className='card_price-value'>2500</p>
+                <div className="card_side card_side-back card_side-back-2">
+                  <div className="card_cta">
+                    <div className="card_price-box">
+                      <p className="card_price-only">Walk-In Session</p>
+                      <p className="card_price-only">Ksh</p>
+                      <p className="card_price-value">2500</p>
                     </div>
-                    <a href='#section-book' className='btn btn-white'>
+                    <a href="#section-book" className="btn btn-white">
                       Book Now
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-1-of-3'>
-              <div className='card'>
-                <div className='card_side card_side-front'>
-                  <div className='card_picture card_picture-3'>&nbsp;</div>
-                  <h4 className='card_heading'>
-                    <span className='card_heading-span card_heading-span-3'>
+            <div className="col-1-of-3">
+              <div className="card">
+                <div className="card_side card_side-front">
+                  <div className="card_picture card_picture-3">&nbsp;</div>
+                  <h4 className="card_heading">
+                    <span className="card_heading-span card_heading-span-3">
                       KICKBOXING
                     </span>
                   </h4>
-                  <div className='card_details'>
+                  <div className="card_details">
                     <ul>
                       <li>Sun - Sat</li>
                       <li>1 Session - 2500</li>
@@ -337,14 +337,14 @@ const Home = () => {
                     </ul>
                   </div>
                 </div>
-                <div className='card_side card_side-back card_side-back-3'>
-                  <div className='card_cta'>
-                    <div className='card_price-box'>
-                      <p className='card_price-only'>Walk-In Session</p>
-                      <p className='card_price-only'>Ksh</p>
-                      <p className='card_price-value'>2500</p>
+                <div className="card_side card_side-back card_side-back-3">
+                  <div className="card_cta">
+                    <div className="card_price-box">
+                      <p className="card_price-only">Walk-In Session</p>
+                      <p className="card_price-only">Ksh</p>
+                      <p className="card_price-value">2500</p>
                     </div>
-                    <a href='#section-book' className='btn btn-white'>
+                    <a href="#section-book" className="btn btn-white">
                       Book Now
                     </a>
                   </div>
@@ -352,17 +352,17 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='row'>
-            <div className='col-1-of-3'>
-              <div className='card'>
-                <div className='card_side card_side-front'>
-                  <div className='card_picture card_picture-4'>&nbsp;</div>
-                  <h4 className='card_heading'>
-                    <span className='card_heading-span card_heading-span-4'>
+          <div className="row">
+            <div className="col-1-of-3">
+              <div className="card">
+                <div className="card_side card_side-front">
+                  <div className="card_picture card_picture-4">&nbsp;</div>
+                  <h4 className="card_heading">
+                    <span className="card_heading-span card_heading-span-4">
                       MUAY THAI
                     </span>
                   </h4>
-                  <div className='card_details'>
+                  <div className="card_details">
                     <ul>
                       <li>Sun - Sat</li>
                       <li>1 Session - 2500</li>
@@ -372,14 +372,14 @@ const Home = () => {
                     </ul>
                   </div>
                 </div>
-                <div className='card_side card_side-back card_side-back-4'>
-                  <div className='card_cta'>
-                    <div className='card_price-box'>
-                      <p className='card_price-only'>Walk-In Session</p>
-                      <p className='card_price-only'>Ksh</p>
-                      <p className='card_price-value'>2500</p>
+                <div className="card_side card_side-back card_side-back-4">
+                  <div className="card_cta">
+                    <div className="card_price-box">
+                      <p className="card_price-only">Walk-In Session</p>
+                      <p className="card_price-only">Ksh</p>
+                      <p className="card_price-value">2500</p>
                     </div>
-                    <a href='#section-book' className='btn btn-white'>
+                    <a href="#section-book" className="btn btn-white">
                       Book Now
                     </a>
                   </div>
@@ -388,30 +388,30 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className='section-stories' id='section-stories'>
-          <div className='bg-video'>
-            <video className='bg-video__content' autoPlay='' muted='' loop=''>
-              <source src='images/people.mp4' type='video/mp4' />
+        <section className="section-stories" id="section-stories">
+          <div className="bg-video">
+            <video className="bg-video__content" autoPlay="" muted="" loop="">
+              <source src="images/people.mp4" type="video/mp4" />
               Your browser does not support background videos!
             </video>
           </div>
-          <div className='u-center-text u-margin-bottom-big'>
-            <h2 className='heading-secondary'>CLIENT STORIES</h2>
+          <div className="u-center-text u-margin-bottom-big">
+            <h2 className="heading-secondary">CLIENT STORIES</h2>
           </div>
-          <div className='row'>
-            <div className='story'>
-              <figure className='story__shape'>
+          <div className="row">
+            <div className="story">
+              <figure className="story__shape">
                 <img
                   src={img6}
-                  alt='Person of the image'
-                  className='story__img'
+                  alt="Person of the image"
+                  className="story__img"
                 />
-                <figcaption className='story__caption'>
+                <figcaption className="story__caption">
                   Sonny Muthoni
                 </figcaption>
               </figure>
-              <div className='story__text'>
-                <h3 className='heading-tertiary u-margin-bottom-small'>
+              <div className="story__text">
+                <h3 className="heading-tertiary u-margin-bottom-small">
                   I learnt boxing in the shortest time possible.
                 </h3>
                 <p>
@@ -422,20 +422,20 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='row'>
-            <div className='story'>
-              <figure className='story__shape'>
+          <div className="row">
+            <div className="story">
+              <figure className="story__shape">
                 <img
                   src={stephenImage}
-                  alt='Person of the image'
-                  className='story__img'
+                  alt="Person of the image"
+                  className="story__img"
                 />
-                <figcaption className='story__caption'>
+                <figcaption className="story__caption">
                   Stephen Ngugi
                 </figcaption>
               </figure>
-              <div className='story__text'>
-                <h3 className='heading-tertiary u-margin-bottom-small'>
+              <div className="story__text">
+                <h3 className="heading-tertiary u-margin-bottom-small">
                   Lost weight through boxercise
                 </h3>
                 <p>
@@ -445,75 +445,75 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='u-center-text u-margin-top-huge'>
-            <a href='#' className='btn-text'>
+          <div className="u-center-text u-margin-top-huge">
+            <a href="#" className="btn-text">
               Read more stories →
             </a>
           </div>
         </section>
-        <section className='section-book' id='section-book'>
-          <div className='row'>
-            <div className='book'>
-              <div className='book__form'>
+        <section className="section-book" id="section-book">
+          <div className="row">
+            <div className="book">
+              <div className="book__form">
                 <form
-                  className='form'
+                  className="form"
                   onSubmit={handleSubmit}
-                  encType='multipart/form-data'
+                  encType="multipart/form-data"
                 >
-                  <div className='u-margin-bottom-medium'>
-                    <h2 className='heading-secondary'>START BOOKING NOW</h2>
+                  <div className="u-margin-bottom-medium">
+                    <h2 className="heading-secondary">START BOOKING NOW</h2>
                   </div>
-                  <div className='form__group'>
+                  <div className="form__group">
                     <input
-                      className='form__input'
-                      placeholder='Fullname'
-                      required=''
+                      className="form__input"
+                      placeholder="Fullname"
+                      required=""
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                     />
-                    <label htmlFor='name' className='form__label'>
+                    <label htmlFor="name" className="form__label">
                       Fullname
                     </label>
                   </div>
-                  <div className='form__group'>
+                  <div className="form__group">
                     <input
-                      className='form__input'
-                      placeholder='Email Address'
-                      name='email'
-                      required=''
+                      className="form__input"
+                      placeholder="Email Address"
+                      name="email"
+                      required=""
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
-                    <label htmlFor='email' className='form__label'>
+                    <label htmlFor="email" className="form__label">
                       Email Address
                     </label>
                   </div>
-                  <div className='form__group'>
+                  <div className="form__group">
                     <input
-                      className='form__input'
-                      placeholder='Phone Number'
-                      name='phone'
-                      required=''
+                      className="form__input"
+                      placeholder="Phone Number"
+                      name="phone"
+                      required=""
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                     />
-                    <label htmlFor='phone' className='form__label'>
+                    <label htmlFor="phone" className="form__label">
                       Phone Number
                     </label>
                   </div>
-                  <div className='form__group'>
-                    <button className='btn btn--green' type='submit'>
+                  <div className="form__group">
+                    <button className="btn btn--green" type="submit">
                       BOOK
                     </button>
                   </div>
                 </form>
-                <form className='form__small'>
-                  <div className='u-margin-top-small u-margin-bottom-small'>
-                    <h2 className='heading-tertiary'>OR</h2>
+                <form className="form__small">
+                  <div className="u-margin-top-small u-margin-bottom-small">
+                    <h2 className="heading-tertiary">OR</h2>
                   </div>
-                  <div className='form__small-group '>
+                  <div className="form__small-group ">
                     {/*<a class="btn btn--green" href="tel:+254706179903">CALL US!</a>*/}
-                    <a className='btn btn--green' href='tel:+254792394507'>
+                    <a className="btn btn--green" href="tel:+254792394507">
                       CALL US!
                     </a>
                   </div>
@@ -522,44 +522,44 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <footer className='footer'>
-          <div className='footer__logo-box'>
-            <img src={logoSmall} alt='Boxing bros' className='footer__logo' />
+        <footer className="footer">
+          <div className="footer__logo-box">
+            <img src={logoSmall} alt="Boxing bros" className="footer__logo" />
           </div>
-          <div className='row'>
-            <div className='col-1-of-2'>
-              <div className='footer__navigation'>
-                <ul className='footer__list'>
-                  <li className='footer__item'>
-                    <a href='#' className='footer__link'>
+          <div className="row">
+            <div className="col-1-of-2">
+              <div className="footer__navigation">
+                <ul className="footer__list">
+                  <li className="footer__item">
+                    <a href="#" className="footer__link">
                       Twitter
                     </a>
                   </li>
-                  <li className='footer__item'>
+                  <li className="footer__item">
                     <a
-                      href='https://instagram.com/boxingbros_ke?utm_source=ig_profile_share&igshid=1tfvvk7bzbx9z'
-                      className='footer__link'
+                      href="https://instagram.com/boxingbros_ke?utm_source=ig_profile_share&igshid=1tfvvk7bzbx9z"
+                      className="footer__link"
                     >
                       Instagram
                     </a>
                   </li>
-                  <li className='footer__item'>
-                    <a href='#' className='footer__link'>
+                  <li className="footer__item">
+                    <a href="#" className="footer__link">
                       Facebook
                     </a>
                   </li>
-                  <li className='footer__item'>
-                    <a href='#' className='footer__link'>
+                  <li className="footer__item">
+                    <a href="#" className="footer__link">
                       Youtube
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className='col-1-of-2'>
-              <p className='footer__copyright'>
+            <div className="col-1-of-2">
+              <p className="footer__copyright">
                 Built by{" "}
-                <a href='#' className='footer__link'>
+                <a href="#" className="footer__link">
                   Frank Ojwang
                 </a>
                 . Copyright © by Frank.
@@ -589,31 +589,31 @@ const Home = () => {
         {/*        </div>*/}
         {/*    </div>*/}
         {/*</div>*/}
-        <div className='popup' id='popup-brayan'>
-          <div className='popup__content'>
-            <div className='popup__left'>
+        <div className="popup" id="popup-brayan">
+          <div className="popup__content">
+            <div className="popup__left">
               <img
-                src='images/bro1a.jpg'
-                alt='photo 10'
-                className='popup__img'
+                src="images/bro1a.jpg"
+                alt="photo 10"
+                className="popup__img"
               />
               <img
-                src='images/bro1.jpg'
-                alt='photo 20'
-                className='popup__img'
+                src="images/bro1.jpg"
+                alt="photo 20"
+                className="popup__img"
               />
             </div>
-            <div className='popup__right'>
-              <a href='#section-about' className='popup__close'>
+            <div className="popup__right">
+              <a href="#section-about" className="popup__close">
                 ×
               </a>
-              <h2 className='heading-secondary u-margin-bottom-medium'>
+              <h2 className="heading-secondary u-margin-bottom-medium">
                 BRO 1
               </h2>
-              <h3 className='heading-tertiary u-margin-bottom-small'>
+              <h3 className="heading-tertiary u-margin-bottom-small">
                 About Brayan Omondi
               </h3>
-              <p className='popup__text'>
+              <p className="popup__text">
                 Brayan Omondi is the epitome of fitness trainers with a
                 background in basketball ,football, rugby and swimming. He began
                 boxing in his late teens at the age of 19 and quickly rose to
@@ -635,27 +635,27 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='popup' id='popup-lennox'>
-          <div className='popup__content'>
-            <div className='popup__left'>
+        <div className="popup" id="popup-lennox">
+          <div className="popup__content">
+            <div className="popup__left">
               <img
-                src='images/bro11.jpg'
-                alt='photo 10'
-                className='popup__img'
+                src="images/bro11.jpg"
+                alt="photo 10"
+                className="popup__img"
               />
               {/*<img src="images/img6.jpg" alt="photo 20" class="popup__img">*/}
             </div>
-            <div className='popup__right'>
-              <a href='#section-about' className='popup__close'>
+            <div className="popup__right">
+              <a href="#section-about" className="popup__close">
                 ×
               </a>
-              <h2 className='heading-secondary u-margin-bottom-medium'>
+              <h2 className="heading-secondary u-margin-bottom-medium">
                 BRO 2
               </h2>
-              <h3 className='heading-tertiary u-margin-bottom-small'>
+              <h3 className="heading-tertiary u-margin-bottom-small">
                 About Lennox Omukwaya
               </h3>
-              <p className='popup__text'>
+              <p className="popup__text">
                 Lennox Omukwaya aka lennox hostile is one of the stylish boxers
                 known in the country, grew up in a boxing family with his father
                 pugilist top cop kusimba leading the national boxing team as
