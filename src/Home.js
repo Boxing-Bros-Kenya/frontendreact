@@ -24,7 +24,7 @@ const Home = () => {
       message: message,
     };
     axios
-      .post("https://boxingbrosbaceknd.herokuapp.com/api/emails", { data })
+      .post("https://boxingbrosapi.herokuapp.com/api/emails", { data })
       .then((res) => {
         // console.log(res);
         window.location = "/";
